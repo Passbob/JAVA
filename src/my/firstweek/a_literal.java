@@ -1,6 +1,6 @@
 package my.firstweek;
 
-public class literal {
+public class a_literal {
     public static void main(String[] args) {
          /*자바 만들 때 어떻게 진행해야할까?
     1. 프로젝트가 없을 시 새 프로젝트를 생성한다.

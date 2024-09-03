@@ -1,6 +1,6 @@
 package my.firstweek;
 
-public class variable_constant {
+public class b_variable_constant {
     public static void main(String[] args) {
     /*
     * 변수는 값이 변할 수 있고 간단하고 편리하게 표현하기 위해서 필요하다
@@ -78,6 +78,22 @@ public class variable_constant {
         int min = (int)triple - bonus*2;
 
         System.out.println("아...사장님이 화났어요..." + min + "가 최종 월급입니다...");
+
+
+//         인조이조의 총합 점수를 계산하려고 한다. 최종점수가 정수(int)로 나오도록 만들어라 프로젝트퀄리티의 최고점은 D이다.
+//         최종점수 계산법 = 랭킹 : 1등 10점, 2등 8점, 3등 6점 / 퀄리티점수 : 유니코드 숫자 / 프로젝트점수 스코어 곱하기 프로젝트갯수
+//         인조이 조의 랭킹은 1등(byte), 프로젝트수는 3개(long), 스코어는 95.8(float), 퀄리티는 D(char)이다.
+
+        byte ranking = 1;
+        long projects = 3L;
+        float Score = 95.8f;
+        char projectQulity = 'D';
+
+
+        ranking = 10;
+        int projectScore = (int)(Score * projects);
+        int total1 = projectScore + ranking + projectQulity;
+        System.out.println("최종점수 = " + total1);
 
     }
 }
