@@ -25,8 +25,6 @@ public class 메소드_형석 {
         int number = sc.nextInt();
         String result = (number > 0)? "양수입니다." : (number == 0)? "0입니다." : "음수입니다." ;
         System.out.println(result);
-
-
     }
 
 }
