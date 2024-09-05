@@ -17,47 +17,56 @@ public class Customer {
 
         System.out.print("원하시는 굿즈의 알파벳을 입력해주세요. : ");
         String product = sc.nextLine();
-
-        System.out.print("원하시는 갯수를 입력해주세요 : ");
-        int each = sc.nextInt();
-        int price = 0;
-        switch (product){
-            case "a" :
-                price =30000;
-                break;
-            case "b" :
-                price =8000;
-                break;
-            case "c" :
-                price =30000;
-                break;
-            case "d" :
-                price =15000;
-                break;
-            case "e" :
-                price =5000;
-                break;
-            case "f" :
-                price =30000;
-                break;
-        }
-
-        if("a".equals(product) ||"b".equals(product) ||"c".equals(product) ||"d".equals(product) ||
-                "e".equals(product) ||"f".equals(product)){
-            sellConfirmed(price, each);
-//            이 이후에 sellConfirmed값 가지고 구매내역에 (가격, 갯수, 구매 혹은 취소)3가지 값 들고가기
-        }
-
-
-
+        int out = 0;
+        int managerMode = 0;
         int dicision = 0;
-        if ("exit".equals(product)){
-            dicision = 1;
-        }else if("manager".equals(product)) {
-            dicision = 2;
+        if("exit".equals(product)){
+            out = 1;
+        }else if ("manager".equals(product)){
+            managerMode = 2;
+        }else {
+            System.out.print("원하시는 갯수를 입력해주세요 : ");
+            int each = sc.nextInt();
+            int price = 0;
+            switch (product) {
+                case "a":
+                    price = 30000;
+                    break;
+                case "b":
+                    price = 8000;
+                    break;
+                case "c":
+                    price = 30000;
+                    break;
+                case "d":
+                    price = 15000;
+                    break;
+                case "e":
+                    price = 5000;
+                    break;
+                case "f":
+                    price = 30000;
+                    break;
+            }
+
+            if ("a".equals(product) || "b".equals(product) || "c".equals(product) || "d".equals(product) ||
+                    "e".equals(product) || "f".equals(product)) {
+                sellConfirmed(price, each);
+//            이 이후에 sellConfirmed값 가지고 구매내역에 (가격, 갯수, 구매 혹은 취소)3가지 값 들고가기
+            }
+
         }
 
-        return dicision;
+
+        if (out == 1){
+            dicision = 1;
+        }else if(managerMode == 2) {
+            dicision = 2;
+        }else {
+            dicision = 3;
+        }
+
+        return (int)dicision;
     }
 
     public int sellConfirmed(int pro ,int each){

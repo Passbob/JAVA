@@ -7,19 +7,11 @@ public class Loop {
     Customer sellStart =  new Customer();
     Manager manager = new Manager();
 
-    sellStart.SellPage();
-    int dicision = 0;
-    dicision = sellStart.SellPage();
-    switch (dicision){
-        case 0 :
-            sellStart.SellPage();
-            break;
-        case 1 :
-            break;
-        case 2 :
-            manager.Managiment();
-            break;
-
+    int loopStart = sellStart.SellPage();
+    if (loopStart == 3) {
+        sellStart.SellPage();
+    }else if (loopStart == 2) {
+        manager.Managiment();
     }
 
     }
