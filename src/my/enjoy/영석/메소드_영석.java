@@ -1,4 +1,4 @@
-package my.enjoy;
+package my.enjoy.영석;
 
 public class 메소드_영석 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package my.enjoy;
+package my.enjoy.형석;
 
 public class 조건문_형석 {
 

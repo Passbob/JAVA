@@ -1,6 +1,4 @@
-package my.enjoy;
-
-import java.util.Random;
+package my.enjoy.호준;
 
 public class 메소드_호준 {
 

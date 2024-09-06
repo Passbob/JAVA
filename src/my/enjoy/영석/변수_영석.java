@@ -1,4 +1,4 @@
-package my.enjoy;
+package my.enjoy.영석;
 
 public class 변수_영석 {
     // 유니코드를 참고하여 'c' "Z"의 사칙연산을 표현해주세요

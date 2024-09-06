@@ -13,17 +13,16 @@ public class Customer {
         System.out.println(" e. 망곰이 스티커 5000원  f. 망곰이 마우스 30000원");
         System.out.println("=============================================");
         System.out.println("나가기를 원하시면 exit를 입력해주세요.");
-        System.out.println("");
+        System.out.println();
 
         System.out.print("원하시는 굿즈의 알파벳을 입력해주세요. : ");
         String product = sc.nextLine();
         int out = 0;
-        int managerMode = 0;
         int dicision = 0;
         if("exit".equals(product)){
-            out = 1;
+            out = 10;
         }else if ("manager".equals(product)){
-            managerMode = 2;
+            out = 20;
         }else {
             System.out.print("원하시는 갯수를 입력해주세요 : ");
             int each = sc.nextInt();
@@ -58,22 +57,28 @@ public class Customer {
         }
 
 
-        if (out == 1){
+        if (out == 10){
             dicision = 1;
-        }else if(managerMode == 2) {
+        }else if(out == 20) {
             dicision = 2;
         }else {
             dicision = 3;
         }
-
-        return (int)dicision;
+        System.out.println("dicision = " + dicision);
+        return dicision;
     }
 
-    public int sellConfirmed(int pro ,int each){
+    public void sellConfirmed(int pro ,int each){
         Scanner sc = new Scanner(System.in);
         System.out.println("총 금액은 " +(pro*each)+ "원 입니다.");
-        System.out.println("구입확정을 원하시면 1번, 취소를 원하시면 2번을 입력해주세요");
-        return 0;
+        System.out.println("구입확정을 원하시면 '1'을 입력해주세요");
+        int choice = sc.nextInt();
+        if(choice == 1){
+            System.out.println("구매가 완료되었습니다.");
+        } else {
+            System.out.println("구매가 취소되었습니다.");
+        }
+
     }
 
 

@@ -1,4 +1,4 @@
-package my.enjoy;
+package my.enjoy.호준;
 
 public class 연산자_호준 {
     public static void main(String[] args) {
