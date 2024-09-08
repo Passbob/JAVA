@@ -11,21 +11,18 @@ public class Loop {
 //        아니다 i를 9999로 설정할 필요 없이 3으로 두고 loopStart 값에 따라 i의 값을 조정시키자
 
 
-        int loopStart = sellStart.SellPage();
-        for (int i = 0; i <= 3; i++) {
+
+        for (int i = 0; i <= 4; i++) {
+            int loopStart = sellStart.SellPage();
             System.out.println("loopStart = " + loopStart);
             if (loopStart == 1) {
                 System.out.println("loopStart = " + loopStart);
                 break;
-            } else if (loopStart == 2) {
+            } else {if (loopStart == 2) {
                 System.out.println("loopStart = " + loopStart);
                 manager.Managiment();
-                loopStart = 3;
-            }else if(loopStart == 3) {
-                System.out.println("loopStart = " + loopStart);
-                sellStart.SellPage();
-                i=0;
-            }
+
+            }}
         }
         System.out.println("구매창이 종료되었습니다.");
     }

@@ -52,6 +52,8 @@ public class Customer {
                     "e".equals(product) || "f".equals(product)) {
                 sellConfirmed(price, each);
 //            이 이후에 sellConfirmed값 가지고 구매내역에 (가격, 갯수, 구매 혹은 취소)3가지 값 들고가기
+            }else {
+                System.out.println("해당하는 상품이 없습니다.");
             }
 
         }
@@ -71,7 +73,7 @@ public class Customer {
     public void sellConfirmed(int pro ,int each){
         Scanner sc = new Scanner(System.in);
         System.out.println("총 금액은 " +(pro*each)+ "원 입니다.");
-        System.out.println("구입확정을 원하시면 '1'을 입력해주세요");
+        System.out.println("구입확정을 원하시면 '1'을 취소를 원하시면 '2'를 입력해주세요");
         int choice = sc.nextInt();
         if(choice == 1){
             System.out.println("구매가 완료되었습니다.");
