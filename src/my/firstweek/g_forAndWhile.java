@@ -35,6 +35,9 @@ public class g_forAndWhile {
 
         }
 
+                Star tree = new Star();
+        tree.treeMaker();
+        tree.treeMaker1();
     }
 
 }
