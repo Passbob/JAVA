@@ -26,11 +26,9 @@ public class 배열_형석 {
         }
 
         System.out.println("내가 좋아하는 과일은");
-        System.out.print(favoriteFruit[0]+" ");
-        System.out.print(favoriteFruit[1]+" ");
-        System.out.print(favoriteFruit[2]+" ");
-        System.out.print(favoriteFruit[3]+" ");
-        System.out.print(favoriteFruit[4]+" ");
+        for(int i = 0; i < favoriteFruit.length; i++) {
+            System.out.print(favoriteFruit[i] + " ");
+        }
         System.out.println();
         System.out.println();
 
