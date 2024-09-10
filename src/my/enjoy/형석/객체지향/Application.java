@@ -29,49 +29,98 @@ public class Application {
 
          */
 
-
         Scanner sc = new Scanner(System.in);
-        System.out.println("======휴대폰 프로그램======");
         User use = new User();
-        int reply = 0;
-        do {
-            System.out.println("===기능을 선택해주세요.===");
-            System.out.println(" 1. 휴대폰 켜기 2. 휴대폰 던지기");
-            reply = sc.nextInt();
-            if (reply == 1) {
-                use.setActivity(1);
-                use.pushButton();
-                    boolean isPass = use.clearPatton();
-                    if (isPass) {
-                        for(int j = 0; j < 99; j++) {
-                            System.out.println("===기능을 선택해주세요.===");
-                            System.out.println(" 1. 1번 앱 실행 2. 2번 앱 실헹 3. 휴대폰 끄기");
-                            int reply2 = sc.nextInt();
-                            if (reply2 == 1) {
-                                use.clickApp();
-                                System.out.println("===기능을 선택해주세요.===");
-                                System.out.println(" 1. 앱 끄기 2. 휴대폰 끄기 ");
-                                int reply3 = sc.nextInt();
-                                if (reply3 == 1 || reply3 ==2) {
-                                    use.closeApp();
-                                } else {
-                                    use.setActivity(2);
-                                    use.pushButton();
-                                    break;
-                                }
-                            } else {
-                                use.setActivity(2);
-                                use.pushButton();
-                                break;
-                            }
-                        }
-                    }
-            }
-            }while (reply != 2);
 
-        System.out.println("프로그램을 종료합니다.");
+        while (true) {
+            System.out.println("======휴대폰 프로그램======");
+            System.out.println("1. 화면 on/off");
+            System.out.println("2. 패턴 풀기");
+            System.out.println("3. 앱 실행시키기");
+            System.out.println("4. 앱 종료");
+            System.out.println("9. 휴대폰 종료");
+            System.out.print("실행할 번호를 입력해주세요 : ");
+            int reply = sc.nextInt();
+            switch (reply) {
+                case 1:
+                    use.pushButton();
+                    break;
+                case 2:
+                    use.clearPatton();
+                    break;
+                case 3:
+                    use.clickApp();
+                    break;
+                case 4:
+                    use.closeApp();
+                    break;
+                case 9:
+                    System.out.println("휴대폰을 종료합니다.");
+                    break;
+                default:
+                    System.out.println("잘못된 번호를 선택하셨습니다.");
+            }
+        if(reply == 9){
+            break;
+        }
+        }
+//
 //휴대폰 킨다. -> 패턴 푼다 -> 앱실행 시킨다. -> 앱실행 끈다.
 
     }
+
+
+
+
+
+
+
+
+//        System.out.println("======휴대폰 프로그램======");
+//        User use = new User();
+//        int reply = 0;
+//        do {
+//            System.out.println("===기능을 선택해주세요.===");
+//            System.out.println(" 1. 휴대폰 켜기 2. 휴대폰 던지기");
+//            reply = sc.nextInt();
+//            if (reply == 1) {
+//                use.setActivity(1);
+//                use.pushButton();
+//                    boolean isPass = use.clearPatton();
+//                    if (isPass) {
+//                        for(int j = 0; j < 99; j++) {
+//                            System.out.println("===기능을 선택해주세요.===");
+//                            System.out.println(" 1. 1번 앱 실행 2. 2번 앱 실헹 3. 휴대폰 끄기");
+//                            int reply2 = sc.nextInt();
+//                            if (reply2 == 1) {
+//                                use.clickApp();
+//                                System.out.println("===기능을 선택해주세요.===");
+//                                System.out.println(" 1. 앱 끄기 2. 휴대폰 끄기 ");
+//                                int reply3 = sc.nextInt();
+//                                if (reply3 == 1 || reply3 ==2) {
+//                                    use.closeApp();
+//                                } else {
+//                                    use.setActivity(2);
+//                                    use.pushButton();
+//                                    break;
+//                                }
+//                            } else {
+//                                use.setActivity(2);
+//                                use.pushButton();
+//                                break;
+//                            }
+//                        }
+//                    }
+//            }
+//            }while (reply != 2);
+//
+//        System.out.println("프로그램을 종료합니다.");
+
+
+
+
+
+
+
 }
 
