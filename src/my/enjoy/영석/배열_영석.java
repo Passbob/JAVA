@@ -36,7 +36,7 @@ public class 배열_영석 {
         int randomCardNumberIndex2 = (int)(Math.random()*cardNumbers.length);
 
         System.out.println("첫 번째로 뽑은 카드는 " + shapes[randomShapeIndex]+" " + cardNumbers[randomCardNumberIndex]+ " 카드입니다.");
-        System.out.println("첫 번째로 뽑은 카드는 " + shapes[randomShapeIndex2]+" " + cardNumbers[randomCardNumberIndex2]+ " 카드입니다.");
+        System.out.println("두 번째로 뽑은 카드는 " + shapes[randomShapeIndex2]+" " + cardNumbers[randomCardNumberIndex2]+ " 카드입니다.");
 
         if(shapes[randomShapeIndex].equals(shapes[randomShapeIndex2])){
             System.out.println("축하합니다! 두 장의 카드가 같은 모양입니다.");

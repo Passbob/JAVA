@@ -11,6 +11,7 @@ public class WarriorInfo {
     public String getName() {
         return name;
     }
+
     public int warriorHp(String level) {
         int warriorLevel = 0;
     if(level.equals("easy")){
@@ -52,7 +53,6 @@ public class WarriorInfo {
             System.out.println("마늘을 맛있게 먹습니다.");
         }
         return warriorDmg;
-
     }
 
 }
