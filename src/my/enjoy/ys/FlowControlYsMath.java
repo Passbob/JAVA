@@ -1,8 +1,8 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
 import java.util.Scanner;
 
-public class 조건문_영석_Math {
+public class FlowControlYsMath {
 
     public void math(){
 

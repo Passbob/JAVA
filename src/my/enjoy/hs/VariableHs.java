@@ -1,6 +1,6 @@
-package my.enjoy.형석;
+package my.enjoy.hs;
 
-public class 형석 {
+public class VariableHs {
 
     public static void main(String[] args) {
         //         인조이조의 총합 점수를 계산하려고 한다. 최종점수가 정수(int)로 나오도록 만들어라 프로젝트퀄리티의 최고점은 D이다.

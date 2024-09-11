@@ -1,4 +1,4 @@
-package my.enjoy.형석.객체지향;
+package my.enjoy.hs.ClassAndObject;
 
 import java.util.Scanner;
 
@@ -26,6 +26,7 @@ public class Phone {
             System.out.println();
         }
     }
+
     public void isPatton(){
 
         if(isactivity){
@@ -85,6 +86,8 @@ public class Phone {
             System.out.println();
         }
     }
+
+
     public void closeApp(){
         if(isactivity && isAppPlay){
             this.isAppPlay = false;

@@ -23,6 +23,7 @@ public class Play {
         monster3.setDmg(70);
         monster3.setProbability(60);
 
+//        ========난이도 설정파트========
         WarriorInfo warrior1 = new WarriorInfo();
         Scanner sc = new Scanner(System.in);
         System.out.print("용사 이름을 입력해주세요 : ");
@@ -40,6 +41,8 @@ public class Play {
         System.out.println();
 
 
+
+//       ========= 몬스터 출현파트==========
         //        int i = (int)(Math.random()*3+1);
         int i = 1;
         if (i == 1) {

@@ -1,8 +1,8 @@
-package my.enjoy.형석;
+package my.enjoy.hs;
 
 import java.util.Scanner;
 
-public class 반복문_형석 {
+public class ForAndWhileHs {
 
     /*
     * for 혹은 while을 이용해서 아래와 같이 나올 수 있도록 만드시오
@@ -11,7 +11,7 @@ public class 반복문_형석 {
 
 
     public static void main(String[] args) {
-        반복문_형석 test = new 반복문_형석();
+        ForAndWhileHs test = new ForAndWhileHs();
         test.forAndWhileQ();
     }
 

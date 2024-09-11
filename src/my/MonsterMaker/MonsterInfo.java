@@ -7,6 +7,17 @@ public class MonsterInfo {
     private int dmg;
     private int probability;
 
+    public MonsterInfo(){}
+
+    public MonsterInfo(String name, int hp, int dmg){
+        this.name = name;
+        this.hp = hp;
+        this.dmg = dmg;
+
+    }
+
+
+
     public void setName(String name) {
         this.name = name;
     }
@@ -23,13 +34,20 @@ public class MonsterInfo {
         this.probability = probability;
     }
 
+    public String getName() {return name;}
+
     public int getHp() {
         return hp;
     }
 
+    public int getDmg() {return dmg;}
+
+    public int getProbability() {return probability;}
+
     public String getInfo() {
         return this.name+"(이)가 출현했습니다.";
     }
+
     public String getStat() {
         return "HP : "+ this.hp +" 데미지 : " +this.dmg+" 공격 확률 : "+this.probability+"%" ;
     }

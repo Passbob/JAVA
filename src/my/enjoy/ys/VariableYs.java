@@ -1,6 +1,6 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
-public class 변수_영석 {
+public class VariableYs {
     // 유니코드를 참고하여 'c' "Z"의 사칙연산을 표현해주세요
     public static void main(String[] args) {
         System.out.println("합 : "+('c'+'z'));

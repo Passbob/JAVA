@@ -1,10 +1,10 @@
-package my.enjoy.형석;
+package my.enjoy.hs;
 
-public class 조건문_형석 {
+public class FlowControlHs {
 
     public static void main(String[] args) {
 
-        조건문_형석 test = new 조건문_형석();
+        FlowControlHs test = new FlowControlHs();
         test.randombox();
 
     }

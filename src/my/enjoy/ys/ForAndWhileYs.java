@@ -1,9 +1,9 @@
 package my.enjoy.영석;
 
-public class 반복문_영석 {
+public class ForAndWhileYs {
 
     public static void main(String[] args) {
-        반복문_영석 gugu = new 반복문_영석();
+        my.enjoy.영석.ForAndWhileYs gugu = new my.enjoy.영석.ForAndWhileYs();
         gugu.Gugu();
     }
 

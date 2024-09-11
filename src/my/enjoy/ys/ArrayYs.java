@@ -1,8 +1,6 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
-import java.util.Arrays;
-
-public class 배열_영석 {
+public class ArrayYs {
 
     public static void main(String[] args) {
     String[] shapes = {"SPADE", "CLOVER", "HART", "DIAMOND"};

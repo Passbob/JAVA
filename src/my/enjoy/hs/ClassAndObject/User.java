@@ -1,4 +1,4 @@
-package my.enjoy.형석.객체지향;
+package my.enjoy.hs.ClassAndObject;
 
 public class User {
     Phone phone = new Phone();

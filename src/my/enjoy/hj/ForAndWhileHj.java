@@ -1,11 +1,11 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
 import java.util.Scanner;
 
-public class 반복문_호준 {
+public class ForAndWhileHj {
 
     public static void main(String[] args) {
-        반복문_호준 test = new 반복문_호준();
+        ForAndWhileHj test = new ForAndWhileHj();
         test.gugudan();
     }
 

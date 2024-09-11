@@ -1,6 +1,6 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
-public class 메소드_영석 {
+public class MethodYs {
     public static void main(String[] args) {
 
         int random1 = ((int)(Math.random()*6)+ 5);

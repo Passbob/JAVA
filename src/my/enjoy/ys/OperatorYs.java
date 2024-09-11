@@ -1,6 +1,6 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
-public class 연산자_영석 {
+public class OperatorYs {
     public static void main(String[] args) {
         // 정사각형의 넓이와 둘레를 구하는 문제이다.
         // 너비 25 높이 25를 변수에 저장하고

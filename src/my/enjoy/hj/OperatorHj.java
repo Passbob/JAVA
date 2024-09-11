@@ -1,6 +1,6 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
-public class 연산자_호준 {
+public class OperatorHj {
     public static void main(String[] args) {
         /* 1번
         정수형 2개 선언, 실수형 2개 선언 후 정수형은 왼쪽의 피연산자로, 실수형은 오른쪽의 피연산자로 놓고

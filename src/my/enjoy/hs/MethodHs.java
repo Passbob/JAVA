@@ -1,8 +1,8 @@
-package my.enjoy.형석;
+package my.enjoy.hs;
 
 import java.util.Scanner;
 
-public class 메소드_형석 {
+public class MethodHs {
 
     public static void main(String[] args) {
 

@@ -1,8 +1,8 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
 import java.util.Scanner;
 
-public class 배열_호준 {
+public class ArrayHj {
 
     public static void main(String[] args) {
 

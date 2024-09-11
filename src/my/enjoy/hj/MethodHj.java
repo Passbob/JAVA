@@ -1,6 +1,6 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
-public class 메소드_호준 {
+public class MethodHj {
 
     public static void main(String[] args) {
 

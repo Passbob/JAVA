@@ -1,14 +1,14 @@
-package my.enjoy.형석;
+package my.enjoy.hs;
 
 import java.util.Scanner;
 
-public class 배열_형석 {
+public class ArrayHs {
 
     public static void main(String[] args) {
 
 //        좋아하는 과일 5가지를 배열에 넣고 불러와주세요
 
-        배열_형석 myFavoriteFruit = new 배열_형석();
+        ArrayHs myFavoriteFruit = new ArrayHs();
         myFavoriteFruit.myFruit();
 
     }

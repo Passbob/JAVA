@@ -1,6 +1,6 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
-public class 변수_호준 {
+public class VariableHj {
     public static void main(String[] args) {
          /*
         주어진 byte를 이용해 오버플로우를 사용해서 -125를 나타내고

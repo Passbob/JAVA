@@ -1,11 +1,11 @@
-package my.enjoy.호준;
+package my.enjoy.hj;
 
 import java.util.Scanner;
 
-public class 조건문_호준 {
+public class FlowControlHj {
 
     public static void main(String[] args) {
-        조건문_호준 test = new 조건문_호준();
+        FlowControlHj test = new FlowControlHj();
         test.fruit();
     }
 
