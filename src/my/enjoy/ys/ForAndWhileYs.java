@@ -1,9 +1,9 @@
-package my.enjoy.영석;
+package my.enjoy.ys;
 
 public class ForAndWhileYs {
 
     public static void main(String[] args) {
-        my.enjoy.영석.ForAndWhileYs gugu = new my.enjoy.영석.ForAndWhileYs();
+        my.enjoy.ys.ForAndWhileYs gugu = new my.enjoy.ys.ForAndWhileYs();
         gugu.Gugu();
     }
 
