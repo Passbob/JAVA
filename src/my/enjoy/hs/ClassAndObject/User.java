@@ -16,13 +16,10 @@ public class User {
     }
 
     public void clickApp(){
-
         phone.playApp();
     }
 
     public void closeApp(){
         phone.closeApp();
     }
-
-
 }
