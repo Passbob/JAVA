@@ -14,20 +14,19 @@ public class WarriorInfo {
     public int getHp() {return hp;}
 
     public int warriorHp(String level) {
-        int warriorLevel = 0;
     if(level.equals("easy")){
-        warriorLevel = 1000;
-        MonsterInfo trollEasy = new MonsterInfo("트롤", 1000, 100);
+        hp = 1000;
+        MonsterInfo trollEasy = new MonsterInfo("트롤", 1000, 100, 30);
     }else if(level.equals("normal")){
-        warriorLevel = 500;
-        MonsterInfo trollNormal = new MonsterInfo("트롤", 1300, 150);
+        hp = 500;
+        MonsterInfo trollNormal = new MonsterInfo("트롤", 1300, 150, 30);
     }else if(level.equals("hard")){
-        warriorLevel = 300;
-        MonsterInfo trollHard = new MonsterInfo("트롤", 1700, 200);
+        hp = 300;
+        MonsterInfo trollHard = new MonsterInfo("트롤", 1700, 200, 30);
     }else {
         System.out.println("다시 입력해주세요");
     }
-        return warriorLevel;
+        return hp;
     }
 
     public int warriorEquipmentForTroll (String equipment) {

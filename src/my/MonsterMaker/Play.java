@@ -5,11 +5,7 @@ import java.util.Scanner;
 public class Play {
 
     public void startTour() {
-        MonsterInfo monster1 = new MonsterInfo();
-        monster1.setName("트롤");
-        monster1.setHp(1000);
-        monster1.setDmg(100);
-        monster1.setProbability(30);
+        MonsterInfo monster1 = new MonsterInfo("트롤", 1000, 100, 30);
 
         MonsterInfo monster2 = new MonsterInfo();
         monster2.setName("뱀파이어");
@@ -46,6 +42,7 @@ public class Play {
         //        int i = (int)(Math.random()*3+1);
         int i = 1;
         if (i == 1) {
+
             int trollHp = monster1.getHp();
             System.out.println(monster1.getInfo());
             for (int j = 0; j < 100; j++) {
@@ -64,9 +61,8 @@ public class Play {
                 }
             }
             System.out.println("숲을 떠납니다.");
-
-
         }
+
 
 
     }

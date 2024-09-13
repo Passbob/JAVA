@@ -9,10 +9,11 @@ public class MonsterInfo {
 
     public MonsterInfo(){}
 
-    public MonsterInfo(String name, int hp, int dmg){
+    public MonsterInfo(String name, int hp, int dmg, int probability){
         this.name = name;
         this.hp = hp;
         this.dmg = dmg;
+        this.probability = probability;
 
     }
 

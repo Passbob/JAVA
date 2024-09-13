@@ -41,7 +41,39 @@ public class MonsterMakerImprove {
 
      몬스터 출현파트를 메소드로 분리해서 다른쪽으로 보내면 좋을 것 같다.
 
+     다형성이나 여러가지 부분들을 이용해 구성을 하려고하는데 강제로 둬야하는 부분들이나 그런 것들이 있을까?
+
+     몬스터가 정해지면 그 몬스터 객체에 대한 전투를 담고 있는 클래스를 구현할 것이다.
+     그러면 몬스터라는 부모클래스를 만들고 거기서 랜덤을 돌린 메소드에서 나온 값에 따라 하위 메소드가 진행될 수 있도록 만드는 것도 좋아보인다.
+     예를 들어 코드를 짜보자
+
+
+     Monster selectTroll = new FightTroll();
+     Monster selectVenom = new FightVenom();
+     Monster selectThunderBird = new FightThunderBird();
+
+     int i = (int)Math.random()*3
+     if(i == 0){
+
+        selectTroll.trollAppear()
+        selectTroll.warriorEquipmentForTroll()
+        selectTroll.getTrollAttack()
+    }
+     if(i == 1){
+
+        selectVenom.VenomAppear()
+        selectVenom.warriorEquipmentForVenom()
+        selectVenom.getVenomAttack()
+    }
+     if(i == 2){
+
+        selectThunderBird.ThunderBirdAppear()
+        selectThunderBird.warriorEquipmentForThunderBird()
+        selectThunderBird.getThunderBirdAttack()
+    }
+
      */
+
 
 
 
