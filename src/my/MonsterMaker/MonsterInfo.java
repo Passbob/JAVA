@@ -53,12 +53,13 @@ public class MonsterInfo {
     }
 
 
+
     public int getTrollAttack() {
         int random = (int) (Math.random()*10) + 1;
         int trollDmg = 0;
         if(random <= 3){
             System.out.println("트롤의 공격에 피격당했습니다.");
-            trollDmg = 200;
+            trollDmg = (int)(Math.random()*100)+200;
         }else {
             System.out.println("옆으로 굴러 회피했습니다.");
             trollDmg = 0;
