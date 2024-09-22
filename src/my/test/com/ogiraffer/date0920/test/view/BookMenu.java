@@ -61,7 +61,7 @@ public class BookMenu {
                     if(searchBook == -1){
                         System.out.println("조회한 도서가 존재하지 않음");
                     }else {
-                        bm.printBook(searchBook);
+                        bm.printSearchBook(bm.searchAllBook(title));
                     }
                     break;
 

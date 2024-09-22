@@ -40,10 +40,27 @@ public class BookManager {
         }
         return match;
 
+    }    public ArrayList<Integer> searchAllBook(String title){
+
+        ArrayList<Integer> match = new ArrayList<>();
+        for(int i = 0; i < bookList.size(); i++) {
+            if(bookList.get(i).getTitle().equals(title)) {
+                match.add(i);
+            }
+        }
+        return match;
+
     }
 
     public void printBook(int index){
         System.out.println(bookList.get(index));
+    }
+    public void printSearchBook(ArrayList<Integer> index){
+        for (int i = 0; i < index.size(); i++) {
+            int a = index.get(i);
+            System.out.println(bookList.get(a));
+        }
+
     }
 
     public void displayAll(){
