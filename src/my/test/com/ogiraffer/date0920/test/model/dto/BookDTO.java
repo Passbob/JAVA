@@ -8,8 +8,8 @@ public class BookDTO {
 
     public BookDTO(){}
 
-    public BookDTO(int bNo, int category, String title, String author) {
-        this.bNo = bNo;
+    public BookDTO(int category, String title, String author) {
+
         this.category = category;
         this.title = title;
         this.author = author;

@@ -33,7 +33,7 @@ public class BookMenu {
                     break;
 
                 case 2 :
-                    System.out.print("정렬방식을 선택해주세요. : ");
+                    System.out.print("정렬방식을 선택해주세요. (1. 오름차순 2. 내림차순) : ");
                     int choice = sc.nextInt();
                     System.out.println();
                     if (choice == 1 || choice == 2) {
@@ -47,8 +47,9 @@ public class BookMenu {
                 case 3 :
                     String deleteSearch = inputBookTitle();
                     int deleteBook = bm.searchBook(deleteSearch);
-                    bm.deleteBook(deleteBook);
+
                     if (deleteBook != -1){
+                        bm.deleteBook(deleteBook);
                         System.out.println("성공적으로 삭제");
                     }else{
                         System.out.println("삭제할 책이 존재하지 않음");
@@ -56,7 +57,6 @@ public class BookMenu {
                     break;
                 case 4 :
                     String title = inputBookTitle();
-                    System.out.println(title);
                     int searchBook = bm.searchBook(title);
                     if(searchBook == -1){
                         System.out.println("조회한 도서가 존재하지 않음");
@@ -72,13 +72,11 @@ public class BookMenu {
 
         }while(!(select == 6));
 
+        System.out.println("프로그램 종료");
     }
 
     public BookDTO inputBook(){
-//        도서 번호 >>임의 값 입?
-        System.out.print("도서 번호를 입력해주세요.: ");
-        int bookNum = sc.nextInt();
-        System.out.println();
+
 //        도서 제목
         System.out.println("도서 제목을 입력해주세요. : ");
         sc.nextLine();
@@ -94,7 +92,7 @@ public class BookMenu {
         sc.nextLine();
         String bookAuthor = sc.nextLine();
         System.out.println();
-        BookDTO bt = new BookDTO(bookNum, bookCategory, bookTitle, bookAuthor);
+        BookDTO bt = new BookDTO(bookCategory, bookTitle, bookAuthor);
 
 
         return bt;
