@@ -47,8 +47,9 @@ public class BookMenu {
                 case 3 :
                     String deleteSearch = inputBookTitle();
                     int deleteBook = bm.searchBook(deleteSearch);
-                    bm.deleteBook(deleteBook);
+
                     if (deleteBook != -1){
+                        bm.deleteBook(deleteBook);
                         System.out.println("성공적으로 삭제");
                     }else{
                         System.out.println("삭제할 책이 존재하지 않음");
@@ -72,6 +73,7 @@ public class BookMenu {
 
         }while(!(select == 6));
 
+        System.out.println("프로그램 종료");
     }
 
     public BookDTO inputBook(){

@@ -26,16 +26,21 @@ public class BookManager {
 
     public void deleteBook(int index){
 
-        bookList.remove(index);
+            bookList.remove(index);
+
 
     }
 
     public int searchBook(String title){
 
         int match = 0;
-        for(int i = 0; i < bookList.size(); i++) {
-            if(bookList.get(i).getTitle().equals(title)) {
-                match = i;
+        if(bookList.size() == 0){
+            match = -1;
+        }else {
+            for (int i = 0; i < bookList.size(); i++) {
+                if (bookList.get(i).getTitle().equals(title)) {
+                    match = i;
+                }
             }
         }
         return match;
@@ -44,7 +49,7 @@ public class BookManager {
 
         ArrayList<Integer> match = new ArrayList<>();
         for(int i = 0; i < bookList.size(); i++) {
-            if(bookList.get(i).getTitle().equals(title)) {
+            if(bookList.get(i).getTitle().contains(title)) {
                 match.add(i);
             }
         }
@@ -60,7 +65,6 @@ public class BookManager {
             int a = index.get(i);
             System.out.println(bookList.get(a));
         }
-
     }
 
     public void displayAll(){
