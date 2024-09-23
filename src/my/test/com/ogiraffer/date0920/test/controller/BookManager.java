@@ -1,5 +1,6 @@
 package my.test.com.ogiraffer.date0920.test.controller;
 
+import my.test.com.ogiraffer.date0920.test.model.comparator.AscBNo;
 import my.test.com.ogiraffer.date0920.test.model.comparator.AscCategory;
 import my.test.com.ogiraffer.date0920.test.model.comparator.DescCategory;
 import my.test.com.ogiraffer.date0920.test.model.dto.BookDTO;
@@ -21,12 +22,22 @@ public class BookManager {
 
     public void addBook(BookDTO book){
         bookList.add(book);
+        book.setbNo(bookList.size());
     }
 
 
     public void deleteBook(int index){
-
+        ArrayList<BookDTO> AscNum = new ArrayList<>();
+        bookList.sort(new AscBNo());
+        for(BookDTO book : bookList){
+            AscNum.add(book);
+        }
             bookList.remove(index);
+            for(int i =0;i < bookList.size(); i++){
+                int j = 1;
+                j += i;
+                bookList.get(i).setbNo(j);
+            }
 
 
     }
@@ -45,7 +56,9 @@ public class BookManager {
         }
         return match;
 
-    }    public ArrayList<Integer> searchAllBook(String title){
+    }
+
+    public ArrayList<Integer> searchAllBook(String title){
 
         ArrayList<Integer> match = new ArrayList<>();
         for(int i = 0; i < bookList.size(); i++) {
@@ -54,7 +67,6 @@ public class BookManager {
             }
         }
         return match;
-
     }
 
     public void printBook(int index){
