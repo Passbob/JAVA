@@ -34,10 +34,10 @@ public class WhiteArea {
         int evenWhiteHorse = 0;
 
 
-        System.out.println("각 줄의 칸에 말이 존재한다면 F , 존재하지 않는다면 .을 반환하세요");
+//        System.out.println("각 줄의 칸에 말이 존재한다면 F , 존재하지 않는다면 .을 반환하세요");
 
         for (int i = 0; i < 8; i++) {
-            System.out.println(i+1+"번째 줄의 말 유무를 적어주세요. (8칸)");
+//            System.out.println(i+1+"번째 줄의 말 유무를 적어주세요. (8칸)");
             String inputText = sc.nextLine();
             for (int put = 0; put < 8; put++) {
                 iL[put] = inputText.charAt(put);
@@ -55,7 +55,8 @@ public class WhiteArea {
             }
 
         }
-        System.out.println("하얀 칸 위의 말 숫자 : "+(oddWhiteHorse+evenWhiteHorse));
+//        System.out.println("하얀 칸 위의 말 숫자 : "+(oddWhiteHorse+evenWhiteHorse));
+        System.out.println(oddWhiteHorse+evenWhiteHorse);
     }
 
 }

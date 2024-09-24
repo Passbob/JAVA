@@ -18,14 +18,16 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
                 if (sum - arr[i] - arr[j] == 100) {
-                    y = arr[j];
                     x = arr[i];
+                    y = arr[j];
                 }
             }
         }
 
         for (int j = 0; j < arr.length; j++) {
             if (arr[j] == x || arr[j] == y) {
+                System.out.println("동일 값"+arr[j]);
+                
                 continue;
             }
             System.out.println(arr[j]);
