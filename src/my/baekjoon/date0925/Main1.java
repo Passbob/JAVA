@@ -3,7 +3,7 @@ package my.baekjoon.date0925;
 import java.util.Scanner;
 
 public class Main1 {
-
+//왜 안올라가지냐
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
