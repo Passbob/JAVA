@@ -16,7 +16,7 @@ public class Main {
         for (int i = 0; i < input.length(); i++) {
         int a = input.length();
         if(i>=1 && numbers[i]<52 && numbers[i] >= 48) {
-            numbers[i-1] = 55;
+            numbers[i] = 55;
         }else if(numbers[i]<55 && numbers[i] >= 52) {
             numbers[i] = 52;
         }else if(numbers[i]<57 && numbers[i] >= 55) {
