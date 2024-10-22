@@ -12,6 +12,7 @@ public class Main {
         double night = sc.nextInt();
         double top = sc.nextInt();
 
+
         int date = (int)Math.ceil((top - day)/(day - night)) +1;
 
         System.out.println(date);
