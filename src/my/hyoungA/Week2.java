@@ -16,6 +16,11 @@ public class Week2 {
 //        go.jh1();
 //        go.jh2();
 //        go.jh3();
+//        하은 문제
+//        go.he1();
+//        go.he2();
+//        go.he3();
+
 
     }
 
@@ -107,6 +112,46 @@ public class Week2 {
             }else {
                 System.out.println("down");
             }
+        }
+    }
+
+    public void he1(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("숫자를 입력하세요");
+        int num = sc.nextInt();
+        if(num%2 == 0){
+            System.out.println("입력하신 숫자는 짝수입니다.");
+        }
+        System.out.println("프로그램을 종료합니다.");
+    }
+
+    public void he2(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("숫자를 입력하세요");
+        int num = sc.nextInt();
+        if(num > 0){
+            System.out.println("입력하신 숫자는 양수입니다.");
+        }else if(num < 0){
+            System.out.println("입력하신 숫자는 음수입니다.");
+        }else{
+            System.out.println("0입니다.");
+        }
+        System.out.println("프로그램을 종료합니다.");
+    }
+    public void he3(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("숫자를 입력하세요");
+        int num = sc.nextInt();
+        if (num==0) {
+            System.out.println("입력하신 숫자는 0입니다. 다른 숫자를 입력해주세요.");
+        } else if(num%3 == 0 && num%4 == 0){
+            System.out.println("입력하신 "+num+"은(는) 3의 배수이면서 4의 배수입니다.");
+        }else if(num%3 == 0){
+            System.out.println("입력하신 "+num+"은(는) 3의 배수입니다.");
+        }else if(num%4==0){
+            System.out.println("입력하신 "+num+"은(는) 4의 배수입니다.");
+        } else{
+            System.out.println("조건을 만족하는 수가 아닙니다.");
         }
     }
 }
