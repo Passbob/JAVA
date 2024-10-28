@@ -40,7 +40,8 @@ public class Week2 {
 
         System.out.println("3의 배수 갯수 = " + threeMultiple);
         System.out.println("5의 배수 갯수 = " + fiveMultiple);
-
+        
+        System.out.println("갯수 총합 = " + threeMultiple +fiveMultiple);
     }
 
     public void sw2(){
